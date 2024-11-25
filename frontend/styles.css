@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin: 0 0 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input {
+    width: 80%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+#results-list {
+    list-style: none;
+    padding: 0;
+}
+
+#results-list li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#llc-details p, #shareholders ul {
+    margin: 0.5rem 0;
+}
+
+#shareholders-section {
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+#shareholders-list div {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+#add-shareholder-btn {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#add-shareholder-btn:hover {
+    background-color: #218838;
+}

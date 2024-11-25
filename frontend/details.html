@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osaühingu andmete vaade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Osaühingu andmete vaade</h1>
+    </header>
+    <main>
+        <section id="llc-details">
+            <h2>Osaühingu andmed</h2>
+            <p><strong>Nimi:</strong> <span id="llc-name"></span></p>
+            <p><strong>Registrikood:</strong> <span id="llc-registration-code"></span></p>
+            <p><strong>Asutamiskuupäev:</strong> <span id="llc-date"></span></p>
+            <p><strong>Kogukapital (€):</strong> <span id="llc-capital"></span></p>
+            <div id="shareholders">
+                <h3>Osanikud</h3>
+                <ul id="shareholders-list">
+                    <!-- Shareholders will be dynamically inserted here -->
+                </ul>
+            </div>
+        </section>
+        <br>
+        <section id="navigation">
+            <a href="index.html">Tagasi avalehele</a>
+        </section>
+    </main>
+    <script src="details.js"></script>
+</body>
+</html>

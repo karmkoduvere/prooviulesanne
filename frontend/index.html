@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osaühingu otsing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Osaühingu otsingu portaal</h1>
+    </header>
+    <main>
+        <section id="navigation-section">
+            <h2>Osaühingu asutamise vormi</h2>
+            <a href="add.html" id="setup-llc-link">Lisa uus osaühing</a>
+        </section>
+        <br>
+        <section id="search-section">
+            <h2>Osaühingu otsing</h2>
+            <form id="search-form">
+                <div class="form-group">
+                    <label for="company-name">Osaühingu nimi: </label>
+                    <input type="text" id="company-name" placeholder="Sisesta osaühingu nimi">
+                </div>
+                <div class="form-group">
+                    <label for="company-code">Registrikood:</label>
+                    <input type="text" id="company-code" placeholder="Sisesta registrikood">
+                </div>
+                <div class="form-group">
+                    <label for="shareholder-name">Osaniku nimi:</label>
+                    <input type="text" id="shareholder-name" placeholder="Sisesta osaniku nimi">
+                </div>
+                <div class="form-group">
+                    <label for="shareholder-code">Osaniku kood:</label>
+                    <input type="text" id="shareholder-code" placeholder="Sisesta osaniku kood">
+                </div>
+                <button type="button" id="search-btn">Search</button>
+            </form>
+        </section>
+        <br>
+        <section id="results-section">
+            <h2>Otsingu tulemus</h2>
+            <ul id="results-list">
+                ...
+                <!-- Results will be dynamically inserted here -->
+            </ul>
+        </section>
+        
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

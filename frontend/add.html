@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osaühingu asutamise vorm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Osaühingu asutamise vorm</h1>
+    </header>
+    <main>
+        <section id="add-llc-form-section">
+            <h2>Lisa uus osaühing</h2>
+            <form id="add-llc-form">
+                <div class="form-group">
+                    <label for="llc-name">Nimi (3-100 tähte või numbrit):</label>
+                    <input type="text" id="llc-name" required minlength="3" maxlength="100">
+                </div>
+                <div class="form-group">
+                    <label for="llc-code">Registrikood (7 numbrit):</label>
+                    <input type="text" id="llc-code" required minlength="7" maxlength="7">
+                </div>
+                <div class="form-group">
+                    <label for="llc-date">Asutamiskuupäev:</label>
+                    <input type="date" id="llc-date" max="" required>
+                </div>
+                <div class="form-group">
+                    <label for="llc-capital">Kogukapitali suurus (€) (vähemalt 2500):</label>
+                    <input type="number" id="llc-capital" min="2500" required>
+                </div>
+                <section id="shareholders-section">
+                    <h3>Osanike andmed</h3>
+                    <div id="shareholders-list"></div>
+                    <button type="button" id="add-shareholder-btn">Lisa osanik</button>
+                </section>
+                <br>
+                <button type="button" id="save-btn">Salvesta</button>
+            </form>
+        </section>
+        <br>
+        <section id="navigation">
+            <a href="index.html">Tagasi avalehele</a>
+        </section>
+    </main>
+    <script src="add.js"></script>
+    </body>
+</html>
