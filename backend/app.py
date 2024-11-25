@@ -32,7 +32,7 @@ def init_db():
         )""")
         conn.commit()
 
-# Get all LLCs
+# Get all shareholders
 @app.route('/shareholders', methods=['GET'])
 def get_shareholders():
     with sqlite3.connect(DATABASE) as conn:
